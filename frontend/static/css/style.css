@@ -1,0 +1,76 @@
+/* Theme style */
+*{
+    font-family: Jost,Montserrat,Ubuntu,Roboto, serif;
+    outline: none;
+}
+*::selection{
+    background-color: var(--selection-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-dark-color );
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.btn{
+    cursor: pointer;
+}
+.btn-container {
+    flex: 1;
+    display: flex;
+}
+.btn-container .btn{
+    margin: auto;
+    background-color: var(--green-light);
+    color: var(--text-light-color);
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+    word-spacing: 5px;
+    font-weight: 500;
+    flex: 1;
+}
+.btn-container .btn:hover{
+    color: var(--green-light);
+    background-color: var(--text-light-color);
+    outline: 2px solid var(--green-light);
+    outline-offset: -2px;
+}
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.none{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout
+{
+  padding: 10px;
+  background: rgb(0,99,249);
+  color: white;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  height: fit-content;
+  display: none;
+}
+
+.separator{
+  background: rgb(0,99,249);
+  height: 5px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,245 @@
+body {
+	background-color: black;
+	color: white;
+	font: 1vw Inconsolata, monospace;
+}
+
+svg {
+	width: 300px;
+	height: 300px;
+	max-width: 1100px;
+	max-height: 600px;
+}
+
+text {
+	fill: white;
+}
+
+#user-info {
+	padding: 0 100px;
+}
+
+#user-info table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1100px;
+}
+
+.graph-container {
+	text-align: center;
+	padding: 20px 50px;
+}
+
+.graph .labels.x-labels {
+	text-anchor: middle;
+}
+
+.graph .labels.y-labels {
+	text-anchor: end;
+}
+
+.graph {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+.graph .grid {
+	stroke: #ccc;
+	stroke-dasharray: 0;
+	stroke-width: 1;
+}
+
+.labels {
+	font-size: 13px;
+}
+
+.label-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	fill: black;
+}
+
+.data circle {
+	fill: white;
+}
+
+.data line {
+	stroke: white;
+	stroke-width: 1;
+}
+#user-info {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments sur la ligne */
+    margin-bottom: 20px; /* Ajoute un espace en bas du bloc user-info */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styles spécifiques pour les colonnes */
+
+
+
+/* Styles pour les éléments avec classe "xp" et "ratio" */
+.xp, .ratio {
+    display:block;
+}
+
+.xp svg, .ratio svg {
+    /* Ajoutez d'autres styles spécifiques pour les éléments svg si nécessaire */
+    width: 100%;
+    height: auto;
+}
+#tt {
+    position: fixed;
+    background: white;
+    color: blue;
+    border-radius: 4px;
+    opacity: 0.75;
+    pointer-events: none; /* Pour éviter que la tooltip bloque les événements de la souris */
+}
+
+#tt.visible {
+    opacity: 1;
+}
+
+
+.welcome{
+	font-size: 50px;
+}
+
+.user-infos {
+	display: grid;
+	grid-template-areas: 
+			"level xp xp identification"
+			"project project audi audi"
+			"project project audi audi";
+	grid-template-columns: repeat(4, 1fr); 
+	grid-template-rows: repeat(3, 1fr); 
+	gap: 50px;
+	margin: 50px;
+}
+
+.user-infos .current-level {
+	background-color: #222; 
+	height: 200px; 
+	grid-area: level;
+}
+
+
+.user-infos .amount-xp {
+	background-color: #222; 
+	height: 200px;
+	grid-area: xp;
+}
+
+.user-infos .audi {
+	background-color: #222; 
+	height: 450px;
+	grid-area: audi;
+	padding: 10px ;
+
+}
+
+.user-infos .identification {
+	background-color: #222; 
+	height: 200px;
+	grid-area: identification;
+	padding: 10px ;
+}
+
+.user-infos .project-done {
+	background-color: #222; 
+	height: 450px;
+	grid-area: project;
+	padding: 10px ;
+}
+
+#login, #id , #total-xp, #level, #total-up, #total-down{
+	margin: 10px;
+}
+#level{
+	font-size: 50px;
+	text-align: center;
+}
+.amout{
+	font-size: 100px;
+	text-align: center;
+
+}
+h2{
+	text-align:center;
+	margin: 10px;
+	color: rgb(0,99,249);
+}
+
+@media (max-width: 600px){
+	.user-infos {
+		display: grid;
+		grid-template-areas: 
+				"xp xp"
+				"level identification"
+				"audi audi"
+				"audi audi"
+				"project project"
+				"project project";
+		grid-template-columns: repeat(2, 1fr); 
+		grid-template-rows: repeat(6, 1fr); 
+		gap: 50px;
+		margin: 50px;
+	}
+
+	.amout{
+		font-size: 25px;
+		text-align: center;
+	
+	}
+
+	.welcome{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 900px)
+{
+	.user-infos {
+		display: grid;
+		grid-template-areas: 
+				"xp xp"
+				"level identification"
+				"audi audi"
+				"audi audi"
+				"project project"
+				"project project";
+		grid-template-columns: repeat(2, 1fr); 
+		grid-template-rows: repeat(6, 1fr); 
+		gap: 50px;
+		margin: 50px;
+	}
+
+	.amout{
+		font-size: 75px;
+		text-align: center;
+	
+	}
+
+	.welcome{
+		font-size: 15px;
+	}
+}
+
+
