@@ -2,7 +2,7 @@ import { SetError } from "./utils.js";
 import { navigateTo,router } from "./index.js";
 import { checkLoginOrEmail, student } from "./query.js";
 import showError from "./error.js";
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'https://graphql-production-abc0.up.railway.app'
 
 
 // Fonction générique pour effectuer des requêtes GET
